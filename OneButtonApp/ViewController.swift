@@ -24,9 +24,8 @@ class ViewController: UIViewController {
     
 
     override func viewDidLoad() {
-        currentValue = 50
         super.viewDidLoad()
-        startNewGame()
+        
         //Styling the slider :) 
         let thumbImageNormal = UIImage(named: "SliderThumb-Normal")!
         slider.setThumbImage(thumbImageNormal, for: .normal)
@@ -44,6 +43,7 @@ class ViewController: UIViewController {
         let trackRightResizable = trackRightImage.resizableImage(withCapInsets: insets)
         slider.setMaximumTrackImage(trackRightResizable, for: .normal)
         
+        startNewGame()
     }
 
     @IBAction func showAler(){
@@ -93,10 +93,19 @@ class ViewController: UIViewController {
         score = 0
         round = 0
         startNewRound()
+        
+        //Core Animation. Add a simple crossfade after the Start Over button is pressed, so the transition back to round one won't seem so abrupt.
+        let transition = CATransition()
+        transition.type = CATransitionType.fade
+        transition.duration = 1
+        transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut)
+        view.layer.add(transition, forKey: nil) 
     }
     
    
     func startNewRound() {
+        round += 1
+        currentValue = 50
         targetValue = Int.random(in: 1...100)
         slider.value = Float(currentValue)
         updateLabels()
@@ -104,7 +113,6 @@ class ViewController: UIViewController {
     }
     
     func updateLabels() {
-        round += 1
         targetLabel.text = String(targetValue)
         scoreLabel.text = String(score)
         roundLabel.text = String(round)
