@@ -13,6 +13,7 @@
 		ED7AA5582210CFB9003E9D5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED7AA5562210CFB9003E9D5E /* LaunchScreen.storyboard */; };
 		EDCA57262216A473002FAAED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDCA57252216A473002FAAED /* Assets.xcassets */; };
 		EDE2623E2216B8BE008EF8A0 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE2623D2216B8BE008EF8A0 /* AboutViewController.swift */; };
+		EDE262402216BD89008EF8A0 /* BullsEye.html in Resources */ = {isa = PBXBuildFile; fileRef = EDE2623F2216BD89008EF8A0 /* BullsEye.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		ED7AA5592210CFB9003E9D5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDCA57252216A473002FAAED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		EDE2623D2216B8BE008EF8A0 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		EDE2623F2216BD89008EF8A0 /* BullsEye.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = BullsEye.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		ED7AA54C2210CFB7003E9D5E /* OneButtonApp */ = {
 			isa = PBXGroup;
 			children = (
+				EDE2623F2216BD89008EF8A0 /* BullsEye.html */,
 				ED7AA54D2210CFB7003E9D5E /* AppDelegate.swift */,
 				ED7AA54F2210CFB7003E9D5E /* ViewController.swift */,
 				EDE2623D2216B8BE008EF8A0 /* AboutViewController.swift */,
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED7AA5582210CFB9003E9D5E /* LaunchScreen.storyboard in Resources */,
+				EDE262402216BD89008EF8A0 /* BullsEye.html in Resources */,
 				EDCA57262216A473002FAAED /* Assets.xcassets in Resources */,
 				ED7AA5532210CFB7003E9D5E /* Main.storyboard in Resources */,
 			);
